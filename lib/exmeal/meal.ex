@@ -11,9 +11,9 @@ defmodule Exmeal.Meal do
   @derive {Jason.Encoder, only: [:id, :descricao, :data, :calorias]}
 
   schema "meals" do
-    field(:descricao, :string)
-    field(:data, :naive_datetime)
-    field(:calorias, :integer)
+    field(:description, :string)
+    field(:date, :naive_datetime)
+    field(:calories, :integer)
 
     timestamps()
   end
