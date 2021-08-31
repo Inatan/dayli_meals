@@ -1,7 +1,7 @@
 defmodule Exmeal.Error do
   @keys [:status, :result]
 
-  @enforce_keys @key
+  @enforce_keys @keys
 
   defstruct @keys
 
@@ -11,4 +11,8 @@ defmodule Exmeal.Error do
       result: result
     }
   end
+
+  def build_meal_not_found_error, do: build(:not_found, "Meal not found")
+
+  def build_id_format_error, do: build(:bad_request, "Invalid id format")
 end
