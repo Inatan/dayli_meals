@@ -1,13 +1,11 @@
 defmodule Exmeal.Meals.GetTest do
-  use Exmeal.DataCase
+  use Exmeal.DataCase, async: true
+
+  import Exmeal.Factory
 
   describe "Get Meal" do
     test "when a valid id is given, returns the meal" do
-      params = %{
-        calories: 20,
-        date: ~D[2001-05-02],
-        description: "Banana"
-      }
+      params = build(:meal_params)
 
       {_ok, meal} = Exmeal.create_meal(params)
 
@@ -16,7 +14,7 @@ defmodule Exmeal.Meals.GetTest do
       assert {:ok,
               %Exmeal.Meal{
                 calories: 20,
-                date: ~D[2001-05-02],
+                date: ~N[2001-05-02 00:00:07],
                 description: "Banana",
                 id: _id
               }} = response

@@ -6,9 +6,9 @@ defmodule Exmeal.Meal do
 
   @primary_key {:id, :binary_id, autogenerate: true}
 
-  @required_params [:descricao, :data, :calorias]
+  @required_params [:description, :date, :calories]
 
-  @derive {Jason.Encoder, only: [:id, :descricao, :data, :calorias]}
+  @derive {Jason.Encoder, only: [:id, :description, :date, :calories]}
 
   schema "meals" do
     field(:description, :string)
