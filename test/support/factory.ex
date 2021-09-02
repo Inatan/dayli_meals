@@ -7,7 +7,7 @@ defmodule Exmeal.Factory do
     %{
       description: "Batata",
       date: ~N[2001-05-02 00:00:07],
-      calories: "20"
+      calories: 20
     }
   end
 
@@ -15,8 +15,8 @@ defmodule Exmeal.Factory do
     %Meal{
       description: "Batata",
       date: ~N[2001-05-02 00:00:07],
-      calories: "20",
-      id: "86f8984d-77bb-42f4-8f4e-46d406d6e5c3"
+      calories: 20,
+      id: "5e694bc0-78fc-4600-bcd0-0733b7540a6e"
     }
   end
 end

@@ -1,9 +1,11 @@
 defmodule Exmeal.MealsControllerTest do
   use ExmealWeb.ConnCase, async: true
 
+  import Exmeal.Factory
+
   describe "create/2" do
     test "when all params are valid, creates a meal", %{conn: conn} do
-      params = %{description: "Banana", date: "2001-05-02 00:00:07", calories: "20"}
+      params = build(:meal_params)
 
       response =
         conn
@@ -14,7 +16,7 @@ defmodule Exmeal.MealsControllerTest do
                "meal" => %{
                  "meal" => %{
                    "calories" => 20,
-                   "date" => "2001-05-02 00:00:07",
+                   "date" => ~N[2001-05-02 00:00:07],
                    "description" => "Banana",
                    "id" => _id
                  }
@@ -41,7 +43,7 @@ defmodule Exmeal.MealsControllerTest do
 
   describe "delete/2" do
     test "when id exist, delete the meal", %{conn: conn} do
-      params = %{description: "Banana", date: "2001-05-02 00:00:07", calories: "20"}
+      params = build(:meal_params)
 
       {:ok, meal} = Exmeal.create_meal(params)
 
@@ -71,7 +73,7 @@ defmodule Exmeal.MealsControllerTest do
 
   describe "update/2" do
     test "when id exist, update the meal", %{conn: conn} do
-      params = %{description: "Banana", date: "2001-05-02 00:00:07", calories: "20"}
+      params = build(:meal_params)
 
       {:ok, meal} = Exmeal.create_meal(params)
 
@@ -85,7 +87,7 @@ defmodule Exmeal.MealsControllerTest do
       assert %{
                "meal" => %{
                  "calories" => 20,
-                 "date" => "2001-05-02 00:00:07",
+                 "date" => ~N[2001-05-02 00:00:07],
                  "description" => "Banana",
                  "id" => _id
                }
@@ -106,7 +108,7 @@ defmodule Exmeal.MealsControllerTest do
 
   describe "get/2" do
     test "when id exist, return the meal", %{conn: conn} do
-      params = %{description: "Banana", date: "2001-05-02 00:00:07", calories: "20"}
+      params = build(:meal_params)
 
       {:ok, meal} = Exmeal.create_meal(params)
 
@@ -120,7 +122,7 @@ defmodule Exmeal.MealsControllerTest do
       assert %{
                "meal" => %{
                  "calories" => 20,
-                 "date" => "2001-05-02 00:00:07",
+                 "date" => ~N[2001-05-02 00:00:07],
                  "description" => "Banana",
                  "id" => _id
                }

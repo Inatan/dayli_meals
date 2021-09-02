@@ -1,74 +1,25 @@
 {
   "failed": [
     {
+      "describe": "update/2",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 75,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test update/2 when id exist, update the meal"
+    },
+    {
       "describe": "create/2",
       "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 5,
+      "line": 7,
       "module": "Elixir.Exmeal.MealsControllerTest",
       "test": "test create/2 when all params are valid, creates a meal"
     },
     {
       "describe": "get/2",
       "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 130,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test get/2 when id not exist, return an error"
-    },
-    {
-      "describe": "update/2",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 95,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test update/2 when not exist id, return an error"
-    },
-    {
-      "describe": "update/2",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 73,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test update/2 when id exist, update the meal"
-    },
-    {
-      "describe": "delete/2",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 43,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test delete/2 when id exist, delete the meal"
-    },
-    {
-      "describe": "get/2",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 108,
+      "line": 110,
       "module": "Elixir.Exmeal.MealsControllerTest",
       "test": "test get/2 when id exist, return the meal"
-    },
-    {
-      "describe": "delete/2",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 58,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test delete/2 when id not exist, return an error"
-    },
-    {
-      "describe": null,
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/views/meals_test.exs",
-      "line": 29,
-      "module": "Elixir.ExmealWeb.MealsViewTest",
-      "test": "test render meal.json"
-    },
-    {
-      "describe": null,
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/views/meals_test.exs",
-      "line": 10,
-      "module": "Elixir.ExmealWeb.MealsViewTest",
-      "test": "test render create.json"
-    },
-    {
-      "describe": "Update Meal",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/update_test.exs",
-      "line": 23,
-      "module": "Elixir.Exmeal.Meals.UpdateTest",
-      "test": "test Update Meal when an invalid id is given, returns an error"
     },
     {
       "describe": "Update Meal",
@@ -78,11 +29,76 @@
       "test": "test Update Meal when a valid id is given, returns the meal"
     },
     {
+      "describe": "Delete Meal",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/delete_test.exs",
+      "line": 7,
+      "module": "Elixir.Exmeal.Meals.DeleteTest",
+      "test": "test Delete Meal when a valid id is given, returns the meal"
+    },
+    {
       "describe": "Get Meal",
       "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/get_test.exs",
-      "line": 23,
+      "line": 7,
       "module": "Elixir.Exmeal.Meals.GetTest",
-      "test": "test Get Meal when an invalid id is given, returns an error"
+      "test": "test Get Meal when a valid id is given, returns the meal"
+    },
+    {
+      "describe": "Create Meal",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/create_test.exs",
+      "line": 9,
+      "module": "Elixir.Exmeal.Meals.CreateTest",
+      "test": "test Create Meal when all params are valid, returns the meal"
+    },
+    {
+      "describe": null,
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/views/meals_test.exs",
+      "line": 10,
+      "module": "Elixir.ExmealWeb.MealsViewTest",
+      "test": "test render create.json"
+    }
+  ],
+  "passed": [
+    {
+      "describe": "create/2",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 28,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test create/2 when there are invalid params, returns an error"
+    },
+    {
+      "describe": "update/2",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 97,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test update/2 when not exist id, return an error"
+    },
+    {
+      "describe": "get/2",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 132,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test get/2 when id not exist, return an error"
+    },
+    {
+      "describe": "delete/2",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 45,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test delete/2 when id exist, delete the meal"
+    },
+    {
+      "describe": "delete/2",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
+      "line": 60,
+      "module": "Elixir.Exmeal.MealsControllerTest",
+      "test": "test delete/2 when id not exist, return an error"
+    },
+    {
+      "describe": "Update Meal",
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/update_test.exs",
+      "line": 23,
+      "module": "Elixir.Exmeal.Meals.UpdateTest",
+      "test": "test Update Meal when an invalid id is given, returns an error"
     },
     {
       "describe": "Delete Meal",
@@ -94,32 +110,23 @@
     {
       "describe": "Get Meal",
       "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/get_test.exs",
-      "line": 7,
+      "line": 23,
       "module": "Elixir.Exmeal.Meals.GetTest",
-      "test": "test Get Meal when a valid id is given, returns the meal"
+      "test": "test Get Meal when an invalid id is given, returns an error"
     },
     {
-      "describe": "Delete Meal",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/delete_test.exs",
-      "line": 7,
-      "module": "Elixir.Exmeal.Meals.DeleteTest",
-      "test": "test Delete Meal when a valid id is given, returns the meal"
+      "describe": null,
+      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/views/meals_test.exs",
+      "line": 29,
+      "module": "Elixir.ExmealWeb.MealsViewTest",
+      "test": "test render meal.json"
     },
     {
       "describe": "Create Meal",
       "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/create_test.exs",
-      "line": 10,
+      "line": 25,
       "module": "Elixir.Exmeal.Meals.CreateTest",
-      "test": "test Create Meal when all params are valid, returns the meal"
-    }
-  ],
-  "passed": [
-    {
-      "describe": "create/2",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal_web/controller/meals_controller_test.exs",
-      "line": 26,
-      "module": "Elixir.Exmeal.MealsControllerTest",
-      "test": "test create/2 when there are invalid params, returns an error"
+      "test": "test Create Meal when there are invalid params, returns an error"
     },
     {
       "describe": null,
@@ -134,13 +141,6 @@
       "line": 7,
       "module": "Elixir.ExmealWeb.ErrorViewTest",
       "test": "test renders 404.json"
-    },
-    {
-      "describe": "Create Meal",
-      "file": "c:/Users/inatan.hertzog/Desktop/Inatan/elixir/dayli_meals/test/exmeal/meals/create_test.exs",
-      "line": 24,
-      "module": "Elixir.Exmeal.Meals.CreateTest",
-      "test": "test Create Meal when there are invalid params, returns an error"
     },
     {
       "describe": "changeset/1",
