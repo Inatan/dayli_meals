@@ -14,12 +14,10 @@ defmodule Exmeal.MealsControllerTest do
 
       assert %{
                "meal" => %{
-                 "meal" => %{
-                   "calories" => 20,
-                   "date" => ~N[2001-05-02 00:00:07],
-                   "description" => "Banana",
-                   "id" => _id
-                 }
+                 "calories" => 20,
+                 "date" => "2001-05-02T00:00:07",
+                 "description" => "Banana",
+                 "id" => _id
                },
                "message" => "Meal created!"
              } = response
@@ -87,7 +85,7 @@ defmodule Exmeal.MealsControllerTest do
       assert %{
                "meal" => %{
                  "calories" => 20,
-                 "date" => ~N[2001-05-02 00:00:07],
+                 "date" => "2001-05-02T00:00:07",
                  "description" => "Banana",
                  "id" => _id
                }
@@ -122,7 +120,7 @@ defmodule Exmeal.MealsControllerTest do
       assert %{
                "meal" => %{
                  "calories" => 20,
-                 "date" => ~N[2001-05-02 00:00:07],
+                 "date" => "2001-05-02T00:00:07",
                  "description" => "Banana",
                  "id" => _id
                }

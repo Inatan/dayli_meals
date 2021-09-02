@@ -13,7 +13,7 @@ defmodule Exmeal.MealTest do
       response = Meal.changeset(params)
 
       assert %Changeset{
-               changes: %{description: "Batata", date: ~N[2001-05-02 00:00:07], calories: 20},
+               changes: %{calories: 20, date: ~N[2001-05-02 00:00:07], description: "Banana"},
                valid?: true
              } = response
     end
