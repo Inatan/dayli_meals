@@ -137,5 +137,16 @@ defmodule Exmeal.MealsControllerTest do
 
       assert %{"message" => "Meal not found"} = response
     end
+
+    test "when id has invalid format, return an format", %{conn: conn} do
+      id = "5e694bc0-78fc-4600-bcd0-0733b7540a6eaa"
+
+      response =
+        conn
+        |> get(Routes.meals_path(conn, :update, id))
+        |> json_response(:bad_request)
+
+      assert %{"message" => "Invalid id format"} = response
+    end
   end
 end
